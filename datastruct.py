@@ -83,13 +83,13 @@ class LinkedList:
 
         Arguments
             - n: int
-              sequence number of item to be retrieved.
+              sequence number of item to be retrieved (zero-indexed).
 
         Returns
             item
 
         Raises
-            IndexError if n > length
+            IndexError if n >= length
         """
         # Replace the line below with your code
         raise NotImplementedError
@@ -128,10 +128,10 @@ class LinkedList:
 
         Arguments
             - n: int
-              sequence number of item to be retrieved.
+              sequence number of item to be retrieved (zero-indexed).
 
         Raises
-            IndexError if n > length
+            IndexError if n >= length
         """
         # Replace the line below with your code
         raise NotImplementedError
