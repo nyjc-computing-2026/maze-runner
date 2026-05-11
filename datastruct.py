@@ -132,7 +132,7 @@ class LinkedList:
         # Validation: ensure index is 0 or positive
         if n < 0:
             raise IndexError("n must be 0 or positive")
-        if n == 0:
+        if n == 0:  # Inserting at head
             node = Node(item)
             node.next = self._head
             self._head = node
