@@ -39,8 +39,7 @@ class Stack(LinkedList):
         Returns
             None
         """
-        # Replace the line below with your code
-        raise NotImplementedError
+        self.insert(0, item)
 
     def pop(self) -> tuple[int, int]:
         """Pops item off the top of the stack, and returns it.
@@ -54,8 +53,10 @@ class Stack(LinkedList):
         Raises
             Empty - if stack is already empty
         """
-        # Replace the line below with your code
-        raise NotImplementedError
+        try:
+            return self.get(0)
+        except IndexError:
+            raise IsEmptyError("Stack is empty")
 
 
 # Queue can also inherit from Array
@@ -83,8 +84,7 @@ class Queue(LinkedList):
         Returns
             None
         """
-        # Replace the line below with your code
-        raise NotImplementedError
+        self.append(item)
 
     def dequeue(self) -> tuple[int, int]:
         """Dequeues item from the front of the queue, and returns it.
@@ -98,8 +98,10 @@ class Queue(LinkedList):
         Raises
             Empty - if queue is already empty
         """
-        # Replace the line below with your code
-        raise NotImplementedError
+        try:
+            return self.get(0)
+        except IndexError:
+            raise IsEmptyError("Queue is empty")
 
 
 if __name__ == "__main__":
